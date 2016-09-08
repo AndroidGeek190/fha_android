@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_coaches"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!-- <RelativeLayout
+        android:id="@+id/rl_mybooking"
+        android:layout_width="match_parent"
+       android:layout_height="@dimen/edt_ch_height"
+        android:layout_alignParentTop="true"
+          android:background="@drawable/green_sprt_hdr"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/edt_ch_padding_right1" >
+
+        <ImageView
+            android:id="@+id/imgbtn_menu_mybkng"
+            android:layout_width="@dimen/sidemenu_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/ll_padding_right"
+            android:paddingLeft="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/nav_icon" />
+
+        <ImageView
+            android:id="@+id/imgbtn_plustrack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/ll_padding_right"
+            android:paddingRight="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/plus" />
+
+        <TextView
+            android:id="@+id/txtvw_mybkng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgbtn_plustrack"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal|center"
+            android:text="Tracking Progress"
+            android:textColor="#ffffff"
+             android:textStyle="bold"
+            android:textSize="@dimen/all_hdr_txtsize" />
+
+</RelativeLayout> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <com.jafarkhq.views.EndlessListView
+            android:id="@+id/trckprgrss_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="8dp" >
+
+        </com.jafarkhq.views.EndlessListView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16dp"
+            android:textColor="@color/caldroid_black"
+            android:text="No Results !!!"
+            android:id="@+id/textView5"
+            android:visibility="gone"
+            android:background="@drawable/coaches_textbg"
+            android:gravity="center_horizontal|center_vertical"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+</RelativeLayout>

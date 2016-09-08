@@ -1,0 +1,215 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+     android:paddingBottom="10dp"
+    android:background="#ffffff"
+    tools:context="com.erginus.fithealthy.EditProfileActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:orientation="vertical"
+        android:id="@+id/ll_edt_profile"
+        android:background="@drawable/nav_cell_bg"
+        >
+    <com.erginus.fithealthy.commons.CircularImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/profilePic"
+        android:src="@drawable/inputweight_profilephoto"
+       android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/caldroid_white"
+            android:layout_marginTop="5dp"
+            android:text="Edit Photo"
+            android:id="@+id/textView7"
+            android:layout_gravity="center_horizontal"/>
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/edt_userFname"
+        android:hint="First Name"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:imeOptions="actionNext"
+        android:textColorHint="@android:color/black"
+        android:drawableLeft="@drawable/first_name"
+        android:drawableBottom="@drawable/edit_profile_line"
+        android:layout_below="@+id/profilePic"
+        android:background="@android:color/transparent"
+        android:editable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/edt_userLname"
+        android:hint="Last Name"
+        android:paddingLeft="5dp"
+        android:textSize="14sp"
+        android:drawablePadding="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:imeOptions="actionNext"
+        android:textColorHint="@android:color/black"
+        android:drawableLeft="@drawable/last_name"
+        android:drawableBottom="@drawable/edit_profile_line"
+        android:layout_below="@+id/profilePic"
+        android:background="@android:color/transparent"
+        android:editable="false"
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:layout_marginTop="10dp" />
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_height="35dp"
+    android:id="@+id/edt_userNm"
+    android:hint="Username(Login)"
+    android:paddingLeft="5dp"
+    android:drawablePadding="12dp"
+    android:layout_marginRight="10dp"
+    android:textSize="14sp"
+    android:layout_marginLeft="10dp"
+    android:imeOptions="actionNext"
+    android:textColorHint="@android:color/black"
+    android:drawableLeft="@drawable/edit_profile_name_icon"
+    android:drawableBottom="@drawable/edit_profile_line"
+    android:layout_below="@+id/profilePic"
+    android:background="@android:color/transparent"
+    android:layout_marginTop="10dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/ll_radiogroup_gender"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+
+    <RelativeLayout
+        android:id="@+id/img_setting_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp" >
+
+        <ImageView
+            android:id="@+id/image_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/signup_checkbok" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rgrp_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/img_setting_rl" >
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10pt"
+            android:layout_marginRight="5dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:text="Male"
+                android:textSize="14sp"
+                android:paddingLeft="5dp"
+                android:button="@drawable/customize_radio_button"
+                android:textColor="@color/caldroid_black" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Female"
+                android:paddingLeft="5dp"
+                android:textSize="14sp"
+                android:clickable="false"
+                android:layout_marginLeft="15dp"
+                android:button="@drawable/customize_radio_button"
+                android:textColor="@color/caldroid_black" />
+        </RadioGroup>
+    </RelativeLayout>
+</RelativeLayout>
+    <TextView
+        android:id="@+id/SelectSkill"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="14sp"
+        android:background="@drawable/dpdn"
+        android:textColor="@color/caldroid_black"
+        android:layout_alignParentLeft="true"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:singleLine="true"
+        android:text="Select Skills"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/edt_desc"
+        android:textSize="14sp"
+        android:hint="Description"
+        android:paddingLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:inputType="textMultiLine"
+        android:imeOptions="actionNext"
+        android:textColorHint="@android:color/black"
+        android:drawableBottom="@drawable/edit_profile_line"
+        android:gravity="top"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="UPDATE"
+        android:id="@+id/button_updt"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/caldroid_white"
+        android:background="@drawable/edit_profile_update_btn_blnk"
+        />
+    </LinearLayout>
+</ScrollView>

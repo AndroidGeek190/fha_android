@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainlay_scrll"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center"
+    tools:context="com.erginus.fithealthy.SignUpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/ll_coach_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:background="@color/primary"
+                android:layout_height="50dp"
+                android:id="@+id/linear_back"
+                android:orientation="horizontal" >
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/actionbar_back_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/back_iv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Sign Up"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="21sp"
+
+                    android:textColor="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/actionbar_logo"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/logo"
+                tools:ignore="RtlCompat" />
+
+        </RelativeLayout>
+        <LinearLayout
+                android:id="@+id/ll_textvw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_left_arrow"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <TextView
+                    android:id="@+id/tv_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcomefh"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="left"
+                    android:text="Welcome to Fit + Healthy Coach"
+                    android:textColor="#BE2625"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_details2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcomefh"
+                    android:layout_centerHorizontal="true"
+                    android:text="Fill in your details &amp; we will be in touch"
+                    android:textColor="#BE2625"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_edttxet_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_textvw"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <EditText
+                    android:id="@+id/editText_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableBottom="@drawable/edit_profile_line"
+                    android:drawableLeft="@drawable/signup_username_icon"
+                    android:ems="10"
+                    android:textCursorDrawable="@null"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:drawablePadding="10dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center_vertical"
+                    android:hint="Name"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textSize="14sp"
+                    android:textColor="#757575"
+                    android:textColorHint="#bdbdbd" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_edttxet_mbileno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_edttxet_name"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <EditText
+                    android:id="@+id/editText_phnno"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableLeft="@drawable/signup_phone_icon"
+                    android:drawableBottom="@drawable/edit_profile_line"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:textCursorDrawable="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Phone No."
+                    android:textSize="14sp"
+                    android:drawablePadding="15dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+
+                    android:paddingLeft="14dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#868686"
+                    android:textColorHint="#bdbdbd" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_edttxet_mailid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                 android:layout_below="@+id/ll_edttxet_mbileno"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <EditText
+                    android:id="@+id/editText_mail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableBottom="@drawable/edit_profile_line"
+                    android:background="@android:color/transparent"
+                    android:drawablePadding="17dp"
+                    android:imeOptions="actionNext"
+                    android:textCursorDrawable="@null"
+                    android:singleLine="true"
+                    android:drawableLeft="@drawable/signin_email_icon"
+                    android:ems="10"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:hint="Email id"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="#868686"
+                    android:textColorHint="#bdbdbd" >
+                </EditText>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_radiogroup_gender"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/ll_edttxet_mailid"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:orientation="horizontal"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/img_setting_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp" >
+
+                    <ImageView
+                        android:id="@+id/image_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/signup_checkbok" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rgrp_rl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignWithParentIfMissing="false"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/img_setting_rl" >
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10pt"
+                        android:layout_marginRight="5dp"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <RadioButton
+                            android:id="@+id/radio_male"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="Male"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp"
+                            android:button="@drawable/customize_radio_button"
+                            android:textColor="#868686" />
+
+                        <RadioButton
+                            android:id="@+id/radio_female"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:paddingLeft="5dp"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="15dp"
+                            android:button="@drawable/customize_radio_button"
+                            android:textColor="#868686" />
+                    </RadioGroup>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_describstn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_radiogroup_gender"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <EditText
+                    android:id="@+id/edt_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:imeOptions="actionDone"
+                    android:layout_centerHorizontal="true"
+                    android:drawableBottom="@drawable/edit_profile_line"
+                    android:clickable="true"
+                    android:textCursorDrawable="@null"
+                    android:focusable="true"
+                    android:paddingLeft="10dp"
+                    android:textSize="14sp"
+                    android:background="@android:color/transparent"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Describe your Speciality"
+                    android:textColor="#868686"
+                    android:textColorHint="#bdbdbd" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_btn_rgstrn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ll_describstn"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:paddingRight="10dp" >
+
+                <Button
+                    android:id="@+id/button_rgstn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/signin_button_background"
+                    android:text="Register"
+
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

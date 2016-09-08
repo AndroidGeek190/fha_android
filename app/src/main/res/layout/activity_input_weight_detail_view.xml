@@ -1,0 +1,1064 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlay_scrll"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:id="@+id/mainrl_answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:background="@color/primary"
+                android:layout_height="50dp"
+                android:id="@+id/linear_back"
+                android:orientation="horizontal" >
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/actionbar_back_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/back_iv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Input Weekly Results"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="21sp"
+
+                    android:textColor="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/actionbar_logo"
+                android:layout_weight="1"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/logo"
+                tools:ignore="RtlCompat" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/name_ll"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:layout_margin="6dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/inputweight_textbg"
+            >
+
+            <TextView
+                android:id="@+id/tv_trc_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tracking Date"
+                android:textColor="@color/caldroid_black"
+                android:textSize="16sp"
+                android:layout_marginLeft="50dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvw_dash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="-"
+                android:textColor="#6f6968"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvw_date_trck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:text="04/04/2014"
+                android:textColor="@color/caldroid_black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <ImageView
+                android:id="@+id/img_uploadpic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/inputweight_profilephoto"
+            android:layout_margin="5dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/inputweight_textbg"
+    android:layout_marginBottom="15dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtvw_wght"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dot1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_wgtstone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100kg/10 Stone"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll12345"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll123"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtbmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="BMI"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.5"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll12345"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txt_bdyfat_trck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Body Fat"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dot3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_bdyfat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txtvw_wgt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calories Consumed"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_caloconsu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100kg/10 Stone"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll1245"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll123"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Calories Burned"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_ot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_caloburn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.5"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll12345"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txt_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Fat Consumed"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_fat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_grmsfat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtvw_pro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Protein Consumed"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_do"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_grmsprotin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100kg/10 Stone"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll123"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtbdyarea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Area of body"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.5"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll12345"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txt_msrmntchng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="input measurement difference"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dots"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_msrdiff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/llvg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtvw_prfmn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sports Performance"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dot3t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_sport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100kg/10 Stone"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll124567"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll123"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txtminb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Distance Performance"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txt_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.5"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll12345"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/txtvw_time_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Time Performance"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll123255"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txtvw_posn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Position Performance"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_pstn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100kg/10 Stone"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll645"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll123"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txtwinl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Win Loose Performance"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dot2win"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_winlose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.5"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll12345"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txt_trng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Training Session"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dot3trng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_trngssn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll3trn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txtvw_exerci"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exercise Performance"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dotexer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_exercse_prfmd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100kg/10 Stone"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llload1245"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll123"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txtload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Load Performance"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_otlod2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_load_achived"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.5"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll12345"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txt_avgre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Average Repetitions"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_avgre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_avrg_repettn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_avg_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txtvw_avgset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Sets"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dotavgse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_avrg_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100kg/10 Stone"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_avg_pace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll123"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txtavgpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Average Pace"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dotavgpace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_avrg_pace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.5"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll12345"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txt_hrtrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Average Heart rate"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dot3hrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_hrt_rate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_avg_wat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txtvw_avgwat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Average Watts"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_dotavgwat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_avrg_watts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100kg/10 Stone"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_avg_cad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll123"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txtavgcad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Average Cadence"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_otavgcad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_avrg_cadence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10.5"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll12345"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txt_recovy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Recovery Session"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_recvry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_rcvry_sessn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll12345"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp" >
+
+            <TextView
+                android:id="@+id/txt_flexiblty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="Recovery Session"
+                android:textStyle="bold"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/txtvw_flexib"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text=":"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/edttxt_flexblty_sessn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25%"
+                android:textColor="@color/caldroid_black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+</LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

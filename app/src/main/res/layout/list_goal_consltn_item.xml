@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="150dp"
+    android:background="@drawable/goal_consultation_textbg"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_textvw_qstn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:orientation="vertical"
+        android:paddingBottom="7dp" >
+
+        <TextView
+            android:id="@+id/txtvw_qstn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:text="How do i loose under my arms?"
+            android:textColor="@color/title_color"
+             />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_img_qstn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_textvw_qstn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        >
+
+        <com.erginus.fithealthy.commons.CircularImageView
+            android:id="@+id/img_poster"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/inputweight_profilephoto" />
+
+        <!--  <com.mikhaellopez.circularimageview.CircularImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"/>
+  -->
+
+        <RelativeLayout
+            android:id="@+id/img_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/txtvw_ans"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:maxLines="5"
+                android:text="Well under your arms is not always about doing the right thing. You need to do push ups really get your diet right...
+                Well under your arms is not always about doing the right thing. You need to do push ups really get your diet right...Well under your arms is not always about doing the right thing. You need to do push ups really get your diet right..."
+                android:textColor="@color/desc_color" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_time_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ll_img_qstn"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/txtvw_no_ans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:textColor="@color/desc_color"
+            android:textSize="12dp"
+          />
+
+
+        <TextView
+            android:id="@+id/txtvw_time_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11hours ago"
+            android:textColor="@color/desc_color"
+            android:textSize="12sp"
+           />
+
+        <TextView
+            android:id="@+id/read_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read More..."
+            android:layout_weight="4"
+            android:gravity="right"
+            android:textSize="15sp"
+            android:paddingRight="3dp"
+            android:textColor="@color/primary"
+            />
+
+    </LinearLayout>
+
+   <!-- <ImageView
+        android:id="@+id/bckarrwimage"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ll_img_qstn"
+        android:layout_marginTop="10dp"
+        android:paddingRight="5dp"
+        android:src="@drawable/g" />
+-->
+</RelativeLayout>

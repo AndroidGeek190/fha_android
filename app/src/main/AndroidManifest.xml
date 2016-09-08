@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.erginus.fithealthy" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_VIDEO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- Tell the system this app requires OpenGL ES 2.0. -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".app.ooVooSdkSampleShowApp"
+        android:allowBackup="true"
+        android:icon="@drawable/fh_logo"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="\ 1611208675829263" />
+        <meta-data
+            android:name="AppId"
+            android:value="\ 12349983354331" /> <!-- Please insert App Id here -->
+        <meta-data
+            android:name="AppToken"
+            android:value="MDAxMDAxAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACicrMR%2FSiLH1peUsPW%2BMgncJhfUhwRqcoiBhwd7CxkJzHE0xKjsffVXQMvbDmcZ9VpP4BGQTnL2aHVnjwnnMPdX4Yr8CrHCXKWupGzXHPhOBMjoE8qYVqgWdZAuVYWGFA%3D" /> <!-- Please insert App Token here -->
+        <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true" />
+
+        <activity
+            android:name="com.facebook.LoginActivity"
+            android:label="title_facebook_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SplashScreenActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TermsAndConditionActivity"
+            android:label="@string/title_activity_terms_and_condition"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="FHCoach"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="t4jsample"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CoachLoginActivity"
+            android:label="@string/title_activity_coach_login"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_sign_up"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:label="@string/title_activity_forgot_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GoalConsultationRoomActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_goal_consultation_room"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CoachListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="Coaches"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".AnswersListActivity"
+            android:label="@string/title_activity_answers"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CoachDetailActivity"
+            android:label="@string/title_activity_coach_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".CoachGroupVideoCallBookingFormActivity"
+            android:label="@string/title_activity_booking_form"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!--
+        <activity
+            android:name=".CoachChatBookingFormActivity"
+            android:label="@string/title_activity_booking_form"
+            android:screenOrientation="portrait" >
+        </activity>
+        -->
+        <activity
+            android:name=".CoachVideoCallBookingFormActivity"
+            android:label="@string/title_activity_booking_form"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".InputWeightDetailActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/title_activity_input_weight_detail"
+            android:screenOrientation="portrait" >
+            >
+        </activity>
+        <activity
+            android:name=".InputWeightDetailViewActivity"
+            android:label="@string/title_activity_input_weight_detail"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <application
+            android:name=".commons.MyApplicationClass"
+            android:icon="@drawable/fha_logo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".CoachAnswerActivity"
+            android:label="@string/title_activity_coach_answer"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name=".BuyTokenActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_buy_token" >
+        </activity>
+        <activity
+            android:name=".ui.SampleActivity"
+            android:label="Video Call" >
+        </activity>
+        <activity
+            android:name=".CoachHomeActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/title_activity_coach_home" >
+        </activity>
+        <activity
+            android:name=".SurveyActivity"
+            android:label="@string/title_activity_survey" >
+        </activity>
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/title_activity_start" >
+        </activity>
+
+    </application>
+
+</manifest>

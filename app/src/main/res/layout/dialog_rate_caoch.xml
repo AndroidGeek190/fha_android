@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="250dp"
+    android:layout_height="wrap_content"
+              android:background="@color/caldroid_white"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+
+            android:text="RATE COACH"
+            android:id="@+id/textView9"
+            android:textStyle="bold"
+            android:textColor="@color/primary"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_marginTop="20dp"
+            android:text="Rate the coach"
+            android:id="@+id/text_rate" />
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar"
+            style="@style/coachRatingBar"
+            android:stepSize="1"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="right"
+            android:paddingLeft="40dp"
+            android:layout_marginTop="30dp">
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="CANCEL"
+                android:background="@android:color/transparent"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/btn_cance"
+                />
+
+            <Button
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:text="OK"
+                android:background="@android:color/transparent"
+                android:textColor="@color/primary"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:id="@+id/btn_ok" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

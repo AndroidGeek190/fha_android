@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--
+         <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainlay_scrll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/sprt_bckgrnd" >
+
+    -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mainlay_scrll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+    android:background="@android:color/white"
+        tools:context="com.erginus.fithealthy.AnswersActivity"
+
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/mainrl_answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:background="@color/primary"
+                android:layout_height="50dp"
+                android:id="@+id/linear_back"
+                android:orientation="horizontal" >
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/actionbar_back_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/back_iv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Answers"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="21sp"
+
+                    android:textColor="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:textStyle="bold" />
+</LinearLayout>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/actionbar_logo"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/logo"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_hderitms"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/goal_consultation_textbg"
+                    android:orientation="vertical"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:paddingRight="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/txt_qstn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="How do i loose under my arms?"
+                        android:textColor="@color/title_color"
+                        android:textSize="16sp"
+                        android:maxLines="1"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtvw_qstn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="95dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="12sp"
+                        android:maxLines="6"
+                        android:text="I have some fat under the arms and it desn't go. I've tried all things possible to get rid of it.They don't seem to go. I've tried exercise. I have some fat under the arms and it desn't go. I've tried all things possible to get rid of it.They don't seem to go. I've tried exercise. Well under your arms is not always about doing the right thing. You need to do push ups really get your diet right..."
+                        android:textColor="@color/desc_color"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/txtvw_time_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginTop="6dp"
+                        android:textSize="12sp"
+
+                        android:text="2 answers-11 hrs ago"
+                        android:textColor="@color/desc_color"
+                         />
+                </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_hderitms"
+
+        android:orientation="vertical" >
+
+        <com.jafarkhq.views.EndlessListView
+            android:id="@+id/answr_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+
+            android:layout_margin="10dp"
+            android:dividerHeight="8dp"
+            >
+        </com.jafarkhq.views.EndlessListView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+    <!-- </ScrollView> -->

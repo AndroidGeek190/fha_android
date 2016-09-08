@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+   android:id="@+id/scrollmain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    tools:context="com.erginus.fithealthy.LoginActivity"
+    android:background="@drawable/login_background">
+
+
+    <RelativeLayout
+        android:id="@+id/mainrl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center" >
+
+        <LinearLayout
+            android:id="@+id/main_LinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+            <LinearLayout
+                android:id="@+id/Ll_fb_tw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/Ll_fb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp" >
+
+                    <com.facebook.widget.LoginButton
+                        xmlns:fb="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/ImageView_fb"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+
+                        fb:login_text=""
+                        fb:logout_text="" />
+
+
+                         <!--<ImageView-->
+                        <!--android:id="@+id/ImageView_fb"-->
+                        <!--android:layout_width="150dp"-->
+                        <!--android:layout_height="120dp"-->
+                        <!--android:adjustViewBounds="true"-->
+                        <!--android:onClick="loginWithFacebook"-->
+                        <!--android:scaleType="fitXY"-->
+                        <!--android:src="@drawable/login_facebook_icon" />-->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_tw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/ImageView_tw"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:adjustViewBounds="true"
+
+                        android:scaleType="fitXY"
+                        android:src="@drawable/login_twitter_icon" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_ll_gplus_coach_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+
+                android:paddingTop="10dp" >
+<!--
+
+                <LinearLayout
+                    android:id="@+id/ll_googleplus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingRight="10dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView_googleplus"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:adjustViewBounds="true"
+                        android:onClick="loginWithGooglePlus"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/login_google_icon" />
+                </LinearLayout>
+-->
+
+                <LinearLayout
+                    android:id="@+id/ll_caoch_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+
+                     >
+
+                    <ImageView
+                        android:id="@+id/imageView_caoch_login"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/login_email_icon" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

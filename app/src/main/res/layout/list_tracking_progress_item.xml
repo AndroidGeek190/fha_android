@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="105dp"
+    android:background="@drawable/tracking_progress_textbg"
+    android:paddingTop="5dp" >
+
+    <RelativeLayout
+        android:id="@+id/trck_img_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" >
+
+        <com.erginus.fithealthy.commons.CircularImageView
+            android:id="@+id/image_crcl_trck"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/inputweight_profilephoto"
+            android:src="@null" />
+
+        <LinearLayout
+            android:id="@+id/ll_img_trcklist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/image_crcl_trck"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:id="@+id/ll_mybookinglist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/name_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_trc_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tracking Date"
+                        android:textColor="#6f6968"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtvw_dash"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="-"
+                        android:textColor="#6f6968"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtvw_date_trck"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="4dp"
+                        android:text="04/04/2014"
+                        android:textColor="#6f6968"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/alltxts_raltve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp" >
+
+                <LinearLayout
+                    android:id="@+id/ll123"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txtvw_wght"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight"
+                        android:textColor="#868686"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtvw_dot1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text=":"
+                        android:textColor="#868686"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtvw_kg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="100kg/10 Stone"
+                        android:textColor="#868686"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll12345"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ll123" >
+
+                    <TextView
+                        android:id="@+id/txtbmi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="BMI"
+                        android:textColor="#868686"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtvw_dot2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text=":"
+                        android:textColor="#868686"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtvw_bmi_no"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10.5"
+                        android:textColor="#868686"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ll12345" >
+
+                    <TextView
+                        android:id="@+id/txt_bdyfat_trck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Body Fat"
+                        android:textColor="#868686"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtvw_dot3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="3dp"
+                        android:paddingRight="3dp"
+                        android:text=":"
+                        android:textColor="#868686"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/txtvw_prcnt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="25%"
+                        android:textColor="#868686"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/bckarrwimage"
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:layout_alignBottom="@+id/ll123"
+                    android:layout_alignParentRight="true"
+                    android:paddingLeft="15dp"
+                    android:src="@drawable/tracking_progress_next_icon" />
+
+            </RelativeLayout>
+</LinearLayout>
+        </RelativeLayout>
+
+        <!-- <LinearLayout
+            android:id="@+id/ll_bmi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_img_trkprgs"
+            android:layout_marginTop="@dimen/ll_duration"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/ll_padding_right"
+            android:paddingLeft="@dimen/ll_padding_left"
+            android:paddingRight="@dimen/ll_padding_left" >
+        </LinearLayout> -->
+
+        <!-- <LinearLayout
+            android:id="@+id/ll_bdyfat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_bmi"
+            android:layout_marginTop="@dimen/ll_padding_right_neg"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/ll_padding_right"
+            android:paddingLeft="@dimen/ll_padding_left"
+            android:paddingRight="@dimen/ll_padding_left" >
+        </LinearLayout> -->
+
+
+
+
+        <!-- </RelativeLayout> -->
+    </RelativeLayout>

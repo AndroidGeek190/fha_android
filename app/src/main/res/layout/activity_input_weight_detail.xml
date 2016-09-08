@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlay_scrll"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/mainrl_answers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:padding="5dp"
+                android:background="@color/primary"
+                android:layout_height="50dp"
+                android:id="@+id/linear_back"
+                android:orientation="horizontal" >
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/actionbar_back_icon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/back_iv" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text=" Input Weekly Results"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="21sp"
+
+                    android:textColor="@android:color/white"
+                    android:gravity="fill_vertical"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/actionbar_logo"
+                android:layout_weight="1"
+                android:layout_marginRight="7dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/logo"
+                tools:ignore="RtlCompat" />
+
+        </RelativeLayout>
+
+        <!--<LinearLayout
+            android:id="@+id/ll_fhimg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_bookingform"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10pt"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/img_fh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/inputweight_newlogo" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/txt_bkngfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_horizontal|center"
+                android:text="Click here to use Fit + Healthy App to obtain Your BMI &amp; Body Fat%"
+                android:textColor="#868686"
+                android:textSize="14dp" />
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:id="@+id/ll_upload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_fhimg"
+            android:background="@drawable/inputweight_textbg"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <com.erginus.fithealthy.commons.CircularImageView
+                android:id="@+id/img_uploadpic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/inputweight_profilephoto" />
+
+            <TextView
+                android:id="@+id/txt_bkngfrom1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:layout_gravity="center_vertical"
+                android:text="Upload a picture to track yourself"
+                android:textColor="#868686"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_upload"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/txt_weightstone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Weight in Stones/Kg"
+                android:textColor="#6f6968"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_wgtstone"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="input weight in stones or Kg"
+                android:paddingLeft="10dp" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_forbmi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_weight"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/txt_bmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BMI"
+                android:textColor="#6f6968"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_bmi"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textSize="14sp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="input BMI"
+                android:paddingLeft="10dp"
+                >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bodyfat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_forbmi"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/txt_bdyfat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Body Fat %"
+                android:textColor="#6f6968"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_bdyfat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="input body fat"
+                android:paddingLeft="10dp" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_totalcalo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_bodyfat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/txt_clocun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Calories Consumed This week"
+                android:textColor="#6f6968"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_caloconsu"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="input calories"
+                android:paddingLeft="10dp" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_caloburn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_totalcalo"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/txt_caloburn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total calories Burned This week"
+                android:textColor="#6f6968"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_caloburn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14dp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="input calories"
+                android:paddingLeft="10dp" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_grmsfat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_caloburn"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/txt_grmsfat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Grams of Fat this Week"
+                android:textColor="#6f6968"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_grmsfat"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="input grams"
+                android:paddingLeft="10dp" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_grmsprotin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_grmsfat"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/txt_grmsprotin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Grams of Protein this week"
+                android:textColor="#6f6968"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_grmsprotin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="input grams"
+                android:paddingLeft="10dp" >
+
+            </EditText>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_msrmntchnge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_upload"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/txt_msrmntchng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Measurement Changes"
+                android:textColor="#6f6968"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_area"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="Area of body"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_msrdiff"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="input measurement difference"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_perfmncimprov"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_msrmntchnge"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <TextView
+                android:id="@+id/txt_prfmnceimrov"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Performance Improvements"
+                android:textColor="#6f6968"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_sport"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:hint="sport"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_distance"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="distance"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_time"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="time"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_pstn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="position"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_winlose"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="win/lose"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_trngssn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="number of training sessions"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_exercse_prfmd"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="exercise performed"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_load_achived"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="load achieved in KG"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_avrg_repettn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="average repetitions"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_avrg_set"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="average sets"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_avrg_pace"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="average pace"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_hrt_rate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="average heart rate"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_avrg_watts"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="average watts"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_avrg_cadence"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:hint="average cadence"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:paddingLeft="10dp" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/txt_rcvry_ssn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recovery Session"
+                android:textColor="#6f6968"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edttxt_rcvry_sessn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:hint="input number of recovery sessions"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/edttxt_flexblty_sessn"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:drawableBottom="@drawable/edit_profile_line"
+                android:background="@android:color/transparent"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:textSize="14sp"
+                android:textColorHint="#bdbdbd"
+                android:textColor="#757575"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                android:hint="input number of flexibility sessions"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_btnupdates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_perfmncimprov"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <Button
+                android:id="@+id/bttn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/inputweight_details_continue_btn1"
+                android:text="Save"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

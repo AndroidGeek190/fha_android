@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="130dp"
+    android:background="@drawable/goal_consultation_textbg" >
+
+    <RelativeLayout
+        android:id="@+id/ll_textvw_qstn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:orientation="vertical"
+        android:paddingBottom="5dp" >
+
+        <TextView
+            android:id="@+id/txtvw_ins_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="James Morgan"
+            android:textColor="@color/title_color"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+<!--
+        <TextView
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:id="@+id/txtvw_dash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="13dp"
+            android:layout_toRightOf="@+id/txtvw_ins_name"
+            android:text="-"
+            android:textColor="@color/title_color"
+            android:textStyle="bold" />-->
+
+        <!--<TextView
+            android:id="@+id/txtvw_headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/txtvw_dash"
+            android:text="Specialist Fitness Instructor"
+            android:textColor="@color/title_color"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_img_qstn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_textvw_qstn"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingBottom="3dp" >
+
+        <LinearLayout
+            android:id="@+id/img_llyout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.erginus.fithealthy.commons.CircularImageView
+                android:id="@+id/imgvw_ans"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/inputweight_profilephoto"
+                android:src="@null" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/img_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="3dp"
+            android:paddingTop="7dp" >
+
+            <TextView
+                android:id="@+id/txtvw_answrs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:textSize="12sp"
+                android:maxLines="4"
+                android:paddingBottom="7dp"
+                android:text="This isn't too hard. You can easily just start to squat weight on your legs and using dumbell exercises...Well under your arms is not always about doing the right thing. You need to do push ups really get your diet right..."
+                android:textColor="@color/desc_color" />
+
+            <!--
+       <ImageView
+        android:id="@+id/bckarrwimage"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+       android:src="@drawable/back_arrow" />
+            -->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_time_no."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_img_qstn"
+
+        android:orientation="horizontal"
+        android:paddingBottom="3dp" >
+
+        <LinearLayout
+            android:id="@+id/llv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="7dp"
+            android:orientation="vertical" >
+
+             <TextView
+                android:id="@+id/txttalk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Talk to James"
+                 android:textSize="11sp"
+                android:textColor="@color/primary"
+                 />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="right"
+            android:layout_marginRight="3dp"
+            android:paddingTop="2dp"
+            android:orientation="horizontal" >
+
+        </LinearLayout>
+
+
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar2"
+            style="@style/coachRatingAvg"
+            android:stepSize="0.5"
+            android:clickable="false"
+            android:isIndicator="true"
+            android:layout_marginRight="20dp"
+            android:layout_alignRight="@+id/llh"
+
+
+            />
+        <TextView
+            android:id="@+id/ratetxt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_alignRight="@+id/llh"
+            android:layout_marginRight="5dp"
+            android:text="R"
+            android:layout_centerVertical="true"
+            android:textSize="11sp"
+            android:textColor="@color/primary"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

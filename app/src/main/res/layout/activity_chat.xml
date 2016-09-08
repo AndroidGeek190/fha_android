@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/host_activity"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.erginus.fithealthy.ui.SampleActivity">
+
+    <!-- <RelativeLayout
+         android:id="@+id/mainrl_answers"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center" >
+         <LinearLayout
+             android:layout_width="fill_parent"
+             android:padding="5dp"
+             android:background="@color/action_bar_color"
+             android:layout_height="50dp"
+             android:id="@+id/linear_back"
+             android:orientation="horizontal" >
+
+
+             <ImageView
+                 android:layout_width="25dp"
+                 android:layout_height="wrap_content"
+                 android:src="@drawable/actionbar_back_icon"
+                 android:layout_marginLeft="10dp"
+                 android:layout_marginRight="20dp"
+                 android:layout_gravity="center_vertical"
+                 android:id="@+id/back_iv" />
+
+             <TextView
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:text="Video Call"
+                 android:layout_gravity="center_vertical"
+                 android:textSize="21dp"
+
+                 android:textColor="@android:color/white"
+                 android:gravity="fill_vertical"
+                 android:textStyle="bold" />
+         </LinearLayout>
+
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="wrap_content"
+             android:src="@drawable/menu_ic_settings"
+             android:layout_weight="1"
+             android:layout_marginRight="70dp"
+             android:layout_alignParentEnd="true"
+             android:layout_centerVertical="true"
+             android:id="@+id/menu_settings"
+             tools:ignore="RtlCompat" />
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="wrap_content"
+             android:src="@drawable/menu_ic_info"
+             android:layout_weight="1"
+             android:layout_marginRight="40dp"
+             android:layout_alignParentEnd="true"
+             android:layout_centerVertical="true"
+             android:id="@+id/menu_information"
+             tools:ignore="RtlCompat" />
+         <ImageView
+             android:layout_width="25dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:layout_marginRight="10dp"
+             android:layout_alignParentEnd="true"
+             android:layout_centerVertical="true"
+             android:id="@+id/menu_signal_strenth"
+             tools:ignore="RtlCompat" />
+     </RelativeLayout>
+ -->
+</LinearLayout>

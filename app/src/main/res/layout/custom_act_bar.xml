@@ -1,0 +1,100 @@
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/primary"
+    android:layout_gravity="fill_horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="?attr/actionBarSize"
+    android:orientation="horizontal"
+    android:id="@+id/navigation_lay">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/actionbar_nav_icon"
+        android:id="@+id/menu_navi" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Goal Consultation Room"
+        android:id="@+id/menu_name_tv"/>
+</LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/space"
+        android:layout_height="match_parent">
+
+      </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:id="@+id/search_bar"
+        >
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/actionbar_back_icon"
+            android:id="@+id/imag_back" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editTxt_Search"
+        android:textStyle="normal"
+        android:layout_marginRight="5dp"
+
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:drawableBottom="@drawable/edit_profile_line"
+        android:background="@android:color/transparent"
+
+        />
+</LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/actionbar_search_icon"
+        android:id="@+id/menu_search" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/actionbar_logo"
+        android:id="@+id/action_bar_logo" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/actionbar_add_icon"
+        android:id="@+id/action_bar_add" />
+
+</LinearLayout>

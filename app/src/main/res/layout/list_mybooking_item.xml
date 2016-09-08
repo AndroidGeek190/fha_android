@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/list_background_color" >
+
+    <RelativeLayout
+        android:id="@+id/combine_lay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <com.erginus.fithealthy.commons.CircularImageView
+            android:id="@+id/img_cir"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/inputweight_profilephoto"
+            android:src="@null" />
+
+        <LinearLayout
+            android:id="@+id/ll_img_mybooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_cir"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_mybookinglist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/name_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_chname_mybkng"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="3dp"
+                        android:text="Richard Brandson"
+                        android:textColor="#6f6968"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/all_txts_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                 >
+
+                <TextView
+                    android:id="@+id/txtvw_callstrt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call Start"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtvw_dot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtvw_callstrt"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text=":"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtvw_gmt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtvw_dot1"
+                    android:text="2pm GMT time"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+                <TextView
+                    android:id="@+id/txtvw_callend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Call End"
+                    android:layout_below="@+id/txtvw_callstrt"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtvw_dot5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtvw_callend"
+                    android:layout_below="@+id/txtvw_dot1"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text=":"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtvw_gmt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txtvw_dot5"
+                    android:layout_below="@+id/txtvw_gmt1"
+                    android:text="2pm GMT time"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtdrtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtvw_callend"
+                    android:gravity="right"
+                    android:text="Duration"
+                    android:textColor="#868686"
+                    android:textSize="11sp"/>
+
+                <TextView
+                    android:id="@+id/txtvw_dot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtvw_dot5"
+                    android:layout_toRightOf="@+id/txtdrtn"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text=":"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtvw_no_hour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtvw_gmt"
+                    android:layout_toRightOf="@+id/txtvw_dot2"
+                    android:text="1"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtvw_gmt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtvw_gmt1"
+                    android:layout_toRightOf="@+id/txtvw_no_hour"
+                    android:paddingLeft="2dp"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txttype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtdrtn"
+                    android:gravity="right"
+                    android:text="Type"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtvw_dot3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtvw_dot2"
+                    android:layout_toRightOf="@+id/txttype"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:text=":"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:id="@+id/txtvw_vdcall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtvw_no_hour"
+                    android:layout_toRightOf="@+id/txtvw_dot3"
+                    android:text="Video call"
+                    android:textColor="#868686"
+                    android:textSize="11sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/combine_lay"
+        android:layout_marginTop="1dp"
+        android:orientation="horizontal"
+        android:paddingBottom="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ll_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_duration"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_rateinstrctr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ll_type"
+        android:layout_marginRight="3dp"
+
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ratingBar2"
+            style="@style/coachRatingAvg"
+            android:stepSize="0.5"
+            android:clickable="false"
+            android:isIndicator="true"
+            /></LinearLayout>
+
+
+</RelativeLayout>

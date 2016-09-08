@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/caldroid_white"
+    tools:context="com.erginus.fithealthy.TermsAndConditionActivity">
+
+    <RelativeLayout
+        android:id="@+id/ll_coach_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:padding="5dp"
+            android:background="@color/primary"
+            android:layout_height="50dp"
+            android:id="@+id/linear_back"
+            android:orientation="horizontal" >
+
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/actionbar_back_icon"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/back_iv" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Terms And Conditions"
+                android:layout_gravity="center_vertical"
+                android:textSize="21sp"
+
+                android:textColor="@android:color/white"
+                android:gravity="fill_vertical"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/actionbar_logo"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/logo"
+            tools:ignore="RtlCompat" />
+
+    </RelativeLayout>
+
+    <!--<CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/checkBox"
+        android:shadowColor="@color/action_bar_color"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"/>-->
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:text="Agree"
+        android:id="@+id/accept"
+        android:textColor="@color/caldroid_white"
+        android:background="@color/primary"
+        android:textSize="16sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginBottom="10dp"
+        />
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="60dp"
+    android:layout_marginBottom="60dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:scrollbarStyle="insideOverlay"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Large Text"
+        android:textSize="14sp"
+        android:textColor="@color/caldroid_black"
+        android:id="@+id/textView4"
+      />
+
+</ScrollView>
+</RelativeLayout>

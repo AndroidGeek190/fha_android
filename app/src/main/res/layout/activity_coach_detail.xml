@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlay_scrll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:background="@android:color/white"
+    android:fadingEdge="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="10dp" >
+
+            <RelativeLayout
+                android:id="@+id/mainrl_answers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" >
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:padding="5dp"
+                    android:background="@color/primary"
+                    android:layout_height="50dp"
+                    android:id="@+id/linear_back"
+                    android:orientation="horizontal" >
+
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/actionbar_back_icon"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_gravity="center_vertical"
+                        android:id="@+id/back_iv" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Jeoff Soloman"
+                        android:layout_gravity="center_vertical"
+                        android:textSize="21sp"
+                       android:id="@+id/name"
+                        android:textColor="@android:color/white"
+                        android:gravity="fill_vertical"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/actionbar_logo"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/logo"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/ll_coachesimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/coaches_details_profilephoto_bg"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp" >
+
+            <com.erginus.fithealthy.commons.CircularImageView
+                android:id="@+id/imageViewch"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/inputweight_profilephoto"
+                android:gravity="center"
+                android:src="@null" />
+
+            <!--    <TextView
+                 android:id="@+id/txtvw_price_min"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignBaseline="@+id/txtvw_price"
+                 android:layout_alignBottom="@+id/txtvw_price"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginLeft="2dp"
+                 android:gravity="right"
+                 android:text="token"
+                 android:textColor="#868686"
+                 android:textSize="15sp" /> -->
+
+        <!--    <TextView
+                android:id="@+id/txtvw_price_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="75dp"
+                android:layout_marginTop="15dp"
+                android:gravity="right"
+                android:text="3"
+                android:textColor="#6f6968"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtvw_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/txtvw_price_count"
+                android:gravity="right"
+                android:text="tokens/min"
+                android:layout_marginRight="10dp"
+                android:textColor="#6f6968"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        --></RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_contacttypes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl1_videocall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imgvw_videocall"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coaches_details_video" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_tokenvalue1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_horizontal|center"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/ten_tokens_rll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textView_vdo_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1-2-1 Coaching"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/pric_rll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="1dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView_tokens1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:enabled="true"
+                                android:text="21 "
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                            <TextView
+                                android:id="@+id/textView_tokens2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:enabled="true"
+                                android:text=" tokens/min"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+               <!-- <RelativeLayout
+                    android:id="@+id/rl1_121chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imgvw_1_2_1chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coaches_details_chat" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_tokenvalue2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="false"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+
+                        <LinearLayout
+                            android:id="@+id/thre_tokens_rll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/texx_chat_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:enabled="true"
+                                android:text="1-2-1 Chat"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/price_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView_token"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:enabled="true"
+                                android:text="6 "
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+                            <TextView
+                                android:id="@+id/textView_token2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:enabled="true"
+                                android:text=" tokens/min"
+                                android:textColor="#ffffff"
+                                android:textSize="12dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+-->
+                <RelativeLayout
+                    android:id="@+id/rl1_grp_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imvw_grp_chat"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/coaches_details_group_video" />
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_tokenvalu2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="false"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerInParent="false"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+
+                        <LinearLayout
+                            android:id="@+id/three_tokens_rll"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/textVx_chat_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:enabled="true"
+                                android:text="Group Coaching"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/price_grup_vdo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="2dp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/textView_tokenprice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:enabled="true"
+                                android:text="5 "
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                            <TextView
+                                android:id="@+id/textView_tokenprice2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:enabled="true"
+                                android:text=" tokens/min"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+
+                        </LinearLayout>
+                    </LinearLayout></RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_name_rate"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@+id/ll_contacttypes"
+                android:background="@drawable/coaches_details_profilephoto_bg"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/llv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/coache_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jeoff Solomon"
+                        android:textColor="#6f6968"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/llh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:orientation="horizontal" >
+
+                  <!--  <RatingBar
+                        android:id="@+id/coache_profile_ratingBar1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_gravity="center_horizontal" />
+-->
+                    <RatingBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ratingBar2"
+                        style="@style/coachRatingAvg"
+                        android:stepSize="0.5"
+                        android:clickable="false"
+                        android:isIndicator="true"
+/>
+                    <TextView
+                        android:id="@+id/bar_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_poster"
+                        android:text="(10)"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:paddingTop="2dp"
+                        android:textColor="#868686"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_splztn_dcrptn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_name_rate"
+                android:layout_marginTop="10dp"
+                android:gravity="left"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+
+                android:background="@drawable/coaches_details_profilephoto_bg"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/dscrptn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:fadingEdge="vertical"
+                    android:gravity="center_vertical"
+                    android:padding="7dp"
+                    android:text="Specailization in weight gain,exercise for women self motivation. I can always give you a training session. Specailization in weight gain,exercise for women self motivation. I can always give you a training session. Specailization in weight gain,exercise for women self motivation. I can always give you a training session. Specailization in weight gain,exercise for women self motivation. I can always give you a training session. Specailization in weight gain,exercise for women self motivation. I can always give you a training session."
+                    android:textColor="#868686"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
